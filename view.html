@@ -3,20 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>EulerJunior</title>
-    <script src="lib/jquery.js">
-
-    </script>
-    <script src="models/problem.js"></script>
-    <script src="controllers/problemsController.js"></script>
+      <script src="lib/jquery.js"></script>
       <script src="app.js"></script>
+      <script src="store.js"></script>
+      <script src="models/problem.js"></script>
+      <script src="controllers/problemsController.js"></script>
+
+
   </head>
   <body>
+    <br>
+    <br>
     <form class="newProblem">
+      <label for="problemTitle">Problem Title:</label>
       <input type="text" class="problemTitle"><br>
+      <br>
+      <label for="problemQuestion">Enter your question: </label>
       <input type="text" class="problemQuestion"><br>
+      <label for="problemSolution">Enter the solution:</label>
       <input type="text" class="problemSolution"><br>
       <input type="submit">
     </form>
+
 
   </body>
 

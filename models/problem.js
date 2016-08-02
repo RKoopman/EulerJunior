@@ -7,8 +7,7 @@ var Problem = (function(){
      this.solution = solution
      this.difficulty = difficulty
      this.id = ++id
-     Store.problems.push(this)
+     store.problems.push(this)
     }
   }
-
 }())

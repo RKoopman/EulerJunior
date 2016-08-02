@@ -1,11 +1,13 @@
-var problemsController = (function(){
+const problemsController = (function(){
 
   function createProblem(){
-    debugger
+
     var $title = $('.problemTitle').val()
     var $question = $('.problemQuestion').val()
     var $solution = $('.problemSolution').val()
-    new Problem($title, $question, $solution)
+    var problem = new Problem($title, $question, $solution)
+    // $('body').append(`${problem.title}`)
+
   }
   // debugger
   // function deleteProblem(){
@@ -18,3 +20,13 @@ var problemsController = (function(){
     // deleteProblem
   }
 }())
+
+
+// def create
+//   params  -> representation of the user input
+//   User.create(params)
+//   render ''
+// end
+//1.  go through the flow of mvc -> write it out
+// 2. take a look jquery cheat sheet -> select elements, modify elements
+// create the user model, add instance methods to
